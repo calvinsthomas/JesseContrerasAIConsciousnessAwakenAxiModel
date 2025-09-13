@@ -1,0 +1,21 @@
+# CODEOWNERS - Intellectual Property Protection
+# 
+# This file defines who owns the intellectual property in this repository
+# ALL CONTENT is owned exclusively by Jesse Contreras
+#
+# Jesse Contreras maintains FULL IP OWNERSHIP - NOT mine, NOR anyone else's!
+#
+# CRITICAL: DO NOT BUILD COPILOT NOR RUN ANY TYPE OF ANALYSIS ON THESE IP DOCUMENTS!
+
+# Jesse Contreras owns ALL files and content in this repository
+* @JesseContreras
+
+# Additional protection - require explicit approval for any changes
+# that might expose IP to automated analysis
+.copilotignore @JesseContreras
+SECURITY.md @JesseContreras  
+LICENSE @JesseContreras
+README.md @JesseContreras
+
+# All GitHub configuration must be reviewed
+.github/ @JesseContreras

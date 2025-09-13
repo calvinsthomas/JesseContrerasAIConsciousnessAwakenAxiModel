@@ -1,0 +1,68 @@
+name: IP Protection Enforcement
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+  workflow_dispatch:
+
+jobs:
+  ip-protection-notice:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Display IP Protection Notice
+        run: |
+          echo "🚫 CRITICAL IP PROTECTION NOTICE 🚫"
+          echo "======================================="
+          echo ""
+          echo "⚠️  DO NOT BUILD COPILOT NOR RUN ANY TYPE OF ANALYSIS ON THIS REPOSITORY! ⚠️"
+          echo ""
+          echo "This repository contains PATENT-SENSITIVE intellectual property"
+          echo "owned exclusively by Jesse Contreras."
+          echo ""
+          echo "STRICTLY PROHIBITED ACTIVITIES:"
+          echo "❌ GitHub Copilot Analysis"
+          echo "❌ AI/ML Processing" 
+          echo "❌ Automated Code Analysis"
+          echo "❌ Pattern Recognition"
+          echo "❌ Training Data Usage"
+          echo "❌ Reverse Engineering"
+          echo ""
+          echo "Jesse Contreras maintains FULL IP OWNERSHIP"
+          echo "NOT mine, NOR anyone else's!"
+          echo ""
+          echo "Unauthorized analysis may result in legal action."
+          echo ""
+          echo "======================================="
+          
+      - name: Verify IP Protection Files
+        run: |
+          if [ ! -f ".copilotignore" ]; then
+            echo "❌ ERROR: .copilotignore file missing!"
+            exit 1
+          fi
+          
+          if [ ! -f "SECURITY.md" ]; then
+            echo "❌ ERROR: SECURITY.md file missing!"
+            exit 1
+          fi
+          
+          if [ ! -f "LICENSE" ]; then
+            echo "❌ ERROR: LICENSE file missing!"  
+            exit 1
+          fi
+          
+          echo "✅ All IP protection files are present"
+          
+      - name: Final IP Protection Warning
+        run: |
+          echo ""
+          echo "🛡️  IP PROTECTION VERIFICATION COMPLETE 🛡️"
+          echo ""
+          echo "Remember: This intellectual property belongs to Jesse Contreras"
+          echo "DO NOT RUN AUTOMATED ANALYSIS ON THESE DOCUMENTS!"
+          echo ""
