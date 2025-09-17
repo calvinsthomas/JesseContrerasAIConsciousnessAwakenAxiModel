@@ -1,0 +1,74 @@
+# IP Protection .gitignore
+# This file helps protect Jesse Contreras' intellectual property
+
+# Temporary files that might contain IP data
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# Build artifacts and compiled files
+build/
+dist/
+out/
+target/
+bin/
+obj/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs that might contain sensitive IP information
+*.log
+logs/
+*.log.*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar.bz2
+
+# Any analysis or processing outputs
+analysis/
+processed/
+output/
+results/
+
+# AI/ML related files
+*.model
+*.pkl
+*.h5
+*.pb
+model/
+models/
+checkpoints/
+
+# Documentation that might expose IP details
+docs/internal/
+private/
+confidential/
+proprietary/

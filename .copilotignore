@@ -1,0 +1,13 @@
+# GitHub Copilot Ignore File
+# This repository contains patent-sensitive intellectual property owned by Jesse Contreras
+# ALL FILES AND CONTENT IN THIS REPOSITORY ARE STRICTLY PROHIBITED FROM:
+# - GitHub Copilot analysis
+# - AI/ML model training
+# - Automated code suggestions
+# - Pattern recognition
+# - Any form of machine learning analysis
+
+# Ignore all files and directories
+*
+**/
+**/*
